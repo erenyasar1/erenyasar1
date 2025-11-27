@@ -5,7 +5,7 @@
 <h1 align="center">Hi 👋, I'm Eren Yaşar</h1>
 <h3 align="center">Computer Programming student, Junior Full Stack Developer</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=erenyasar1&label=Profile%20views&color=0e75b6&style=flat" alt="erenyasar1" /> </p>
+
 
 - 🔭 I’m currently working on **Digital Student Panel**
 
@@ -32,5 +32,5 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=erenyasar1&show_icons=true&locale=en" alt="erenyasar1" /></p>
 
-
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=erenyasar1&label=Profile%20views&color=0e75b6&style=flat" alt="erenyasar1" /> </p>
 
