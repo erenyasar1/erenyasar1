@@ -1,0 +1,21 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="100%">
+    <style>
+        .bg { fill: #0d1117; rx: 15px; }
+        .name { font: 700 48px system-ui, sans-serif; fill: #ffffff; opacity: 0; animation: fadeUp 1s 0.2s forwards; }
+        .title { font: 400 22px system-ui, sans-serif; fill: #8b949e; opacity: 0; animation: fadeUp 1s 0.5s forwards; }
+        .highlight { fill: #58a6ff; }
+        @keyframes fadeUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    <rect class="bg" width="100%" height="100%" />
+    <text x="50" y="90" class="name">Merhaba, ben <tspan class="highlight">Eren Yaşar</tspan></text>
+    <text x="50" y="135" class="title">Software Developer | Sürekli Öğrenen & Üreten</text>
+    
+    <!-- Animasyonlu dekoratif çizgi -->
+    <rect x="50" y="160" width="0" height="3" fill="#58a6ff">
+        <animate attributeName="width" from="0" to="100" dur="1s" begin="0.8s" fill="freeze" />
+    </rect>
+</svg>

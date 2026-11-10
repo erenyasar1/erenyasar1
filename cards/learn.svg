@@ -1,0 +1,32 @@
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250" width="100%" height="100%">
+        <style>
+            .bg { fill: #161b22; rx: 15px; stroke: #30363d; stroke-width: 1; }
+            .title { font: 600 24px system-ui, sans-serif; fill: #ffffff; opacity: 0; animation: fadeUp 0.8s 0.6s forwards; }
+            .item { font: 400 16px system-ui, sans-serif; fill: #c9d1d9; opacity: 0; animation: fadeUp 0.8s forwards; }
+            @keyframes fadeUp {
+                0% { opacity: 0; transform: translateY(15px); }
+                100% { opacity: 1; transform: translateY(0); }
+            }
+        </style>
+        <rect class="bg" width="100%" height="100%" />
+        <text x="30" y="45" class="title">🚀 Şu An Odaklandığım</text>
+        
+        <text x="30" y="80" class="item" style="animation-delay: 0.8999999999999999s;">
+            <tspan fill="#d2a8ff">▹</tspan> Yapay Zeka Entegrasyonları
+        </text>
+        
+        <text x="30" y="115" class="item" style="animation-delay: 1.0999999999999999s;">
+            <tspan fill="#d2a8ff">▹</tspan> İleri Seviye Algoritmalar
+        </text>
+        
+        <text x="30" y="150" class="item" style="animation-delay: 1.2999999999999998s;">
+            <tspan fill="#d2a8ff">▹</tspan> Açık Kaynak Projeler
+        </text>
+        
+        <text x="30" y="185" class="item" style="animation-delay: 1.5s;">
+            <tspan fill="#d2a8ff">▹</tspan> Sistem Mimarisi
+        </text>
+        
+    </svg>
+    
