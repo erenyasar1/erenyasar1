@@ -2,11 +2,15 @@ name: Generate Animated SVG Cards
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Her gece gece yarısı çalışır
-  workflow_dispatch: # Manuel olarak butona basıp çalıştırmana izin verir
+    - cron: "0 0 * * *" 
+  workflow_dispatch: 
   push:
     branches:
-      - main # main dalına her kod yüklendiğinde çalışır
+      - main 
+
+# İŞTE EKSİK OLAN YAZMA İZNİ BURADA:
+permissions:
+  contents: write
 
 jobs:
   build:
