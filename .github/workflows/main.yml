@@ -1,0 +1,32 @@
+name: Generate Animated SVG Cards
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Her gece gece yarısı çalışır
+  workflow_dispatch: # Manuel olarak butona basıp çalıştırmana izin verir
+  push:
+    branches:
+      - main # main dalına her kod yüklendiğinde çalışır
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu Çek
+        uses: actions/checkout@v3
+
+      - name: Python Kurulumu
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: SVG Kartlarını Oluştur (Python Betiğini Çalıştır)
+        run: python generate_cards.py
+
+      - name: Yeni Kartları GitHub'a Kaydet (Commit & Push)
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add cards/
+          git commit -m "Otomatik Güncelleme: Animasyonlu SVG Kartları [skip ci]" || exit 0
+          git push
